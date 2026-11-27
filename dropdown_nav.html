@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 2px;
+            position: sticky;
+
+        }
+
+        ul li {
+            display: block;
+            float: left;
+        }
+
+        li ul {
+            display: none;
+        }
+
+        ul li a {
+            display: block;
+            background-color: #007689;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            width: 100px;
+            border: 2px solid red;
+        }
+
+        ul li a:hover {
+            background-color: #007689;
+            color: white;
+        }
+
+        li:hover ul {
+            display: block;
+            position: absolute;
+        }
+
+        li:hover li {
+            float: none;
+        }
+
+        li:hover a {
+            background-color: #94C548;
+            color: black;
+        }
+
+        li:hover li a:hover {
+            background: black;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Drop Down Navigation Menu</h3>
+
+    <ul>
+        <li><a href="#">News</a>
+            <ul>
+                <li><a href="#">Latest News</a></li>
+                <li><a href="#">Hindi News</a></li>
+                <li><a href="#
+                    ">Top News</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Markets</a>
+            <ul>
+                <li><a href="#">Pre-markets</a></li>
+                <li><a href="#">Global Markets</a></li>
+                <li><a href="#">Stock Screener</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Mutual Funds</a>
+            <ul>
+                <li><a href="#">Axis Bluechip Fund</a></li>
+                <li><a href="#">LIC MF Large Cap</a></li>
+                <li><a href="#">CR Bluechip Equity</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Commodities</a>
+            <ul>
+                <li><a href="#">Gold Price</a></li>
+                <li><a href="#">Silver Price</a></li>
+                <li><a href="#">Crudeoil Price</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+
+</html>
